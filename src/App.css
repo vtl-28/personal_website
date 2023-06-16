@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.hero_section {
+  display: flex;
+  height: 100vh;
+  background-color: #24263b;
+}
+.about_section {
+  display: flex;
+  height: 100vh;
+  background-color: #1f2235;
+}
+.projects_section {
+  display: flex;
+  height: 100vh;
+  background-color: #24263b;
+}
+.contact_section {
+  display: flex;
+  height: 100vh;
+  background-color: #1f2235;
 }
