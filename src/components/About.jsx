@@ -3,12 +3,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col px-24 py-12 about_section" id="about">
+    <div className="flex flex-col xs:px-12 md:px-24 py-24 about_section" id="about">
       <div className="flex justify-center mb-8">
-        <h1 className="text-white font-bold text-5xl">About Me</h1>
+        <h1 className="text-white font-bold text-4xl">About Me</h1>
       </div>
-      <div className="flex flex-col w-full gap-6 h-2/4">
-          <p className="text-[#dfdfdf] xs:text-base text-lg tracking-wide">
+      <div className="flex flex-col w-full gap-4 h-2/4">
+          <p className="text-[#dfdfdf] xs:text-base md:text-lg">
             My love for software development grew when I had the opportunity to
             do an internship with a software development company called Digital
             Academy. This internship allowed me to hone my skills and gain
@@ -17,7 +17,7 @@ const About = () => {
             CSS, and back-end technologies such as Node.js, Express, and
             MongoDB.
             </p>
-            <p className="text-[#dfdfdf] text-lg tracking-wide">
+            <p className="text-[#dfdfdf] xs:text-base md:text-lg">
             During my internship, I was also able to work with a team
             of experienced developers, which taught me the importance of
             collaboration and effective communication in software development. I
@@ -25,7 +25,7 @@ const About = () => {
             control, and I was able to put these skills into practice by working
             on a project that involved creating a mobile application.
             </p> 
-            <p className="text-[#dfdfdf] text-lg tracking-wide">
+            {/* <p className="text-[#dfdfdf] text-lg tracking-wide">
             I actively
             work on personal projects and participate in online coding
             challenges to further enhance my skills. I have also been reading
@@ -33,8 +33,8 @@ const About = () => {
             community to stay up-to-date on industry trends and advancements.
             This has allowed me to expand my knowledge and experience working
             with a variety of programming languages and frameworks.
-            </p> 
-            <p className="text-[#dfdfdf] text-lg tracking-wide">
+            </p>  */}
+            <p className="text-[#dfdfdf] xs:text-base md:text-lg">
             As a developer with little experience, I am looking
             for entry-level tech roles to further grow as a developer. I am
             confident that my passion for software development, my commitment to

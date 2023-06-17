@@ -43,16 +43,23 @@
 }
 .about_section {
   display: flex;
-  height: 100vh;
   background-color: #1f2235;
 }
 .projects_section {
   display: flex;
-  height: 100vh;
   background-color: #24263b;
 }
 .contact_section {
   display: flex;
-  height: 100vh;
   background-color: #1f2235;
 }
+
+/* @media (max-width:640px) {
+  .about_section {
+    height: 165vh;
+  }
+  .projects_section {
+    height: 165vh;
+  }
+  
+} */

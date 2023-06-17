@@ -12,8 +12,8 @@ function App() {
       <Navigation />
       <HeroSection />
       <About />
-      <Projects />
-      <Contact />
+     <Projects />
+      <Contact /> 
     </div>
   );
 }

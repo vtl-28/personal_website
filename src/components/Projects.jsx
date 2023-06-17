@@ -7,18 +7,18 @@ import { FaFolder, FaLink, FaGithub } from 'react-icons/fa'
 
 const Projects = () => {
   return (
-    <div id='projects' className='flex flex-col px-24 py-12 projects_section'>
-      <div className='flex items-center justify-center mb-8'>
-        <h1 className='font-bold text-2xl text-white'>Some things I've built</h1>
+    <div id='projects' className='flex flex-col xs:px-12 lg:px-24 py-24 projects_section'>
+      <div className='flex items-center justify-center mb-10'>
+        <h1 className='font-bold xs:text-2xl md:text-4xl text-white'>Some things I've built</h1>
       </div>
-      <div className='flex justify-between gap-8'>
+      <div className='flex xs:flex-col md:flex-row md:justify-between md:gap-4 lg:gap-8 justify-between gap-8'>
         <Card bg="#1f2235" px="4" className='rounded-2xl'>
-          <CardHeader h='230px'>
-            <img src={absaScreenshot} className='object-cover rounded-2xl'/>
+          <CardHeader pb={['0px']}>
+            <img src={absaScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open('source_code_link', "_blank")}
-                className='flex items-center justify-center w-1/5 h-10 mr-4 rounded-full cursor-pointer black-gradient'
+                className='flex items-center justify-center xs:w-1/4 md:w-[30%] lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
               >
                 {/* <img
                   src={github}
@@ -37,7 +37,7 @@ const Projects = () => {
             passwords to the many applications and systems they used to get 
             work done
             .</p>
-            <ul className='flex gap-3 mt-4 list-none'>
+            <ul className='flex gap-3 mt-4 list-none flex-wrap'>
               <li className='text-[#008000]'>mongodb</li>
               <li className='text-white'>express</li>
               <li className='text-[#087ea4]'>react</li>
@@ -47,12 +47,12 @@ const Projects = () => {
           </CardBody>
         </Card>
         <Card bg="#1f2235" px="4" className='rounded-2xl'>
-          <CardHeader h='230px'>
-            <img src={talkhostScreenshot} className='object-cover rounded-2xl'/>
+          <CardHeader pb={['0px']}>
+            <img src={talkhostScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open('source_code_link', "_blank")}
-                className='flex items-center justify-center w-1/5 h-10 mr-4 rounded-full cursor-pointer black-gradient'
+                className='flex items-center justify-center xs:w-1/4 md:w-[30%] lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
               >
                 {/* <img
                   src={github}
