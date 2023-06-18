@@ -1,20 +1,43 @@
-import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import React, { useEffect } from 'react'
+import { Card, CardHeader, CardBody } from '@chakra-ui/react'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Tilt } from 'react-tilt'
 import absaScreenshot from '../assets/APV_screenshot.PNG'
 import talkhostScreenshot from '../assets/TH_screenshot.PNG'
-import github from '../assets/github.png'
 import { FaFolder, FaLink, FaGithub } from 'react-icons/fa'
 
 const Projects = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      console.log(inView)
+      controls.start({
+        opacity: 1,
+        transition: {
+          duration: 2,  
+          ease: "easeInOut"
+        }
+      });
+    }
+  }, [controls, inView]);
+  
   return (
-    <div id='projects' className='flex flex-col xs:px-12 lg:px-24 py-24 projects_section'>
-      <div className='flex items-center justify-center mb-10'>
-        <h1 className='font-bold xs:text-2xl md:text-4xl text-white'>Some things I've built</h1>
-      </div>
-      <div className='flex xs:flex-col md:flex-row md:justify-between md:gap-4 lg:gap-8 justify-between gap-8'>
+    <div id='projects' className='flex flex-col py-24 xs:px-12 lg:px-24 projects_section'>
+      <motion.div ref={ref} initial={{ opacity: 0}} animate={controls} className='flex items-center justify-center mb-10'>
+        <h1 className='font-bold text-white xs:text-2xl md:text-4xl'>Some things I've built</h1>
+      </motion.div>
+      <div className='flex justify-between gap-8 xs:flex-col md:flex-row md:justify-between md:gap-4 lg:gap-8'>
+        <Tilt options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}>
         <Card bg="#1f2235" px="4" className='rounded-2xl'>
           <CardHeader pb={['0px']}>
-            <img src={absaScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
+            <img alt='project snapshot' src={absaScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open('source_code_link', "_blank")}
@@ -37,7 +60,7 @@ const Projects = () => {
             passwords to the many applications and systems they used to get 
             work done
             .</p>
-            <ul className='flex gap-3 mt-4 list-none flex-wrap'>
+            <ul className='flex flex-wrap gap-3 mt-4 list-none'>
               <li className='text-[#008000]'>mongodb</li>
               <li className='text-white'>express</li>
               <li className='text-[#087ea4]'>react</li>
@@ -46,9 +69,15 @@ const Projects = () => {
             </ul>
           </CardBody>
         </Card>
+        </Tilt>
+        <Tilt options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}>
         <Card bg="#1f2235" px="4" className='rounded-2xl'>
           <CardHeader pb={['0px']}>
-            <img src={talkhostScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
+            <img alt='project snapshot' src={talkhostScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open('source_code_link', "_blank")}
@@ -81,6 +110,7 @@ const Projects = () => {
             </ul>
           </CardBody>
         </Card>
+        </Tilt>
       </div>
      
     </div>

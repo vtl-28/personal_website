@@ -9,7 +9,7 @@ const Navigation = () => {
    <nav className='sm:px-16 px-12 w-full flex items-center py-6 fixed top-0 z-20 bg-[#1f2235]'>
       <div className='flex items-center justify-between w-full mx-auto max-w-7xl'>
         <Link
-          to='heroSection' smooth={true} offset={50} duration={1000}
+          to='heroSection' offset={-70} smooth={true} duration={1000}
     spy={true}
           className='flex items-center gap-2'
         >
@@ -19,18 +19,18 @@ const Navigation = () => {
         </Link>
         <ul className='flex-row hidden list-none md:flex gap-14'>
          
-            <Link className='text-white' to='about' smooth={true} offset={50} duration={1000}
+            <Link className='text-white' to='about' activeClass="active" offset={-70} smooth={true} duration={1000}
     spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>About</a>
             </Link>
             <Link className='text-white'>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Skills</a>
             </Link>
-            <Link className='text-white' to='projects' smooth={true} offset={50} duration={1000}
+            <Link className='text-white' to='projects' activeClass="active"  offset={-70} smooth={true} duration={1000}
     spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Projects</a>
             </Link>
-            <Link className='text-white' to='contact' smooth={true} offset={50} duration={1000}
+            <Link className='text-white' to='contact' activeClass="active" offset={-70} smooth={true} duration={1000}
     spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Contact</a>
             </Link>
@@ -42,43 +42,31 @@ const Navigation = () => {
             className=' w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
-          <div className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-            <ul className='flex flex-col items-start justify-end flex-1 gap-4 list-none'>
+          <div className={`${!toggle ? "hidden" : "flex"} border border-[#1f2235] mr-10 p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+            <ul className='flex flex-col items-center justify-end flex-1 gap-4 list-none'>
              
                 <Link
                   className='text-white' to='about' smooth={true} offset={50} duration={1000}
     spy={true}
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
                 >
-                  <a href='#'>About</a>
+                  <a href='#' className='font-semibold hover:text-[#fe4a57]'>About</a>
                 </Link>
                 <Link
                   className='text-white'
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
                 >
-                  <a href='#'>Skills</a>
+                  <a href='#' className='font-semibold hover:text-[#fe4a57]'>Skills</a>
                 </Link>
                 <Link
                   className='text-white' to='projects' smooth={true} offset={50} duration={1000}
     spy={true}
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
                 >
-                  <a href='#'>Projects</a>
+                  <a href='#' className='font-semibold hover:text-[#fe4a57]'>Projects</a>
                 </Link>
                 <Link
                  className='text-white' to='contact' smooth={true} offset={50} duration={1000}
     spy={true}
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
                 >
-                  <a href='#'>Contact</a>
+                  <a href='#' className='font-semibold hover:text-[#fe4a57]'>Contact</a>
                 </Link>
              
             </ul>

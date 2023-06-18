@@ -8,7 +8,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="scroll-smooth snap-mandatory snap-y ">
       <Navigation />
       <HeroSection />
       <About />

@@ -2,34 +2,44 @@ import React from 'react'
 import profilePic from '../assets/linkedin_dp.jpeg'
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { Link } from 'react-scroll'
+import { easeInOut, motion } from "framer-motion";
 
+  const buttonVariants  = {
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.3,
+        yoyo: Infinity
+      }
+    }
+  }
 const HeroSection = () => {
   return (
-    <div className='flex items-center xs:mt-16 mt-10 justify-around xs:px-12 sm:px-20 md:px-24 hero_section' id='heroSection'>
-      <div className='flex flex-col xs:w-full sm:justify-center lg:w-1/2'>
-          <div className='flex justify-between xs:w-full sm:w-2/3 md:w-[50%] mb-6'>
-              <a href='https://github.com/vtl-28' target='_blank' rel='noreferrer' className='rounded-full hover:bg-[#fe4a57] border-2 border-[#fe4a57] w-14 h-14 p-3 flex items-center justify-center'>
+    <div className='flex items-center justify-around mt-10 xs:mt-16 xs:px-12 sm:px-20 md:px-24 hero_section' id='heroSection'>
+      <motion.div transition={{duration: 1, delay: 1, ease: easeInOut}} initial={{opacity: 0}} animate={{opacity: 1}} className='flex flex-col xs:w-full sm:justify-center lg:w-1/2'>
+          <div className='flex justify-between xs:w-1/2 sm:w-2/3 md:w-[50%] mb-6'>
+              <motion.a whileHover={{scale: 1.2}} href='https://github.com/vtl-28' target='_blank' rel='noreferrer' className='rounded-full hover:bg-[#fe4a57] border-2 border-[#fe4a57] w-14 h-14 p-3 flex items-center justify-center'>
                 <FaGithub className='w-5 h-5 text-white'/>
-              </a>
-              <a href='https://twitter.com/vt_lehola' target='_blank' rel='noreferrer' className='rounded-full hover:bg-[#fe4a57] border-2 border-[#fe4a57] w-14 h-14 p-3 flex items-center justify-center'>
+              </motion.a>
+              <motion.a whileHover={{scale: 1.2}} href='https://twitter.com/vt_lehola' target='_blank' rel='noreferrer' className='rounded-full hover:bg-[#fe4a57] border-2 border-[#fe4a57] w-14 h-14 p-3 flex items-center justify-center'>
                 <FaTwitter className='w-5 h-5 text-white'/>
-              </a>
-              <a href='https://www.linkedin.com/in/vuyisile-lehola-99a597122/' target='_blank' rel='noreferrer' className='rounded-full hover:bg-[#fe4a57] border-2 border-[#fe4a57] w-14 h-14 p-3 flex items-center justify-center'>
+              </motion.a>
+              <motion.a whileHover={{scale: 1.2}} href='https://www.linkedin.com/in/vuyisile-lehola-99a597122/' target='_blank' rel='noreferrer' className='rounded-full hover:bg-[#fe4a57] border-2 border-[#fe4a57] w-14 h-14 p-3 flex items-center justify-center'>
                 <FaLinkedin className='w-5 h-5 text-white'/>
-              </a>
+              </motion.a>
           </div>
-          <h3 className='mb-6 text-2xl md:text-3xl lg:text-2xl text-white'>Hi, my name is </h3>
-          <h3 className='mb-8 xs:text-4xl text-5xl text-white'>Vuyisile Tlotliso Lehola</h3>
+          <h3 className='mb-6 text-2xl text-white md:text-3xl lg:text-2xl'>Hi, my name is </h3>
+          <h3 className='mb-8 text-5xl text-white xs:text-4xl'>Vuyisile Tlotliso Lehola</h3>
           <p className='text-[#dfdfdf] xs:text-xl md:text-2xl'>Full-stack developer looking for an entry-level role in a development team to 
 further grow as a developer</p>
           <Link to='about' smooth={true} offset={50} duration={1000}
     spy={true}>
-            <button className='text-white font-semibold  border-2 border-[#fe4a57] rounded-full mt-6 hover:bg-[#fe4a57] xs:w-[45%] sm:w-[40%] xs:py-3 sm:py-3 lg:w-[30%] md:py-3'>Find out more</button>
+            <motion.button variants={buttonVariants} whileHover="hover" className='text-white font-semibold  border-2 border-[#fe4a57] rounded-full mt-6 hover:bg-[#fe4a57] xs:w-[45%] sm:w-[40%] xs:py-3 sm:py-3 lg:w-[30%] md:py-3'>Find out more</motion.button>
           </Link>
-      </div>
-      <div className='xs:hidden lg:flex'>
-        <img src={profilePic} className='h-[332px]'/>
-      </div>
+      </motion.div>
+      <motion.div transition={{duration: 1, delay: 1.5, ease: easeInOut}} initial={{opacity: 0}} animate={{opacity: 1}} className='xs:hidden lg:flex'>
+        <img alt="profile pic" src={profilePic} className='h-[332px]'/>
+      </motion.div>
     </div>
   )
 }

@@ -1,11 +1,29 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+//import { fadeIn, textVariant } from '../utils/motion'
 
 const About = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      console.log(inView)
+      controls.start({
+        opacity: 1,
+        transition: {
+          duration: 2,  
+          ease: "easeInOut"
+        }
+      });
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="flex flex-col xs:px-12 md:px-24 py-24 about_section" id="about">
+    <motion.div ref={ref} initial={{ opacity: 0}} animate={controls} className="flex flex-col py-24 xs:px-12 md:px-24 about_section" id="about">
       <div className="flex justify-center mb-8">
-        <h1 className="text-white font-bold text-4xl">About Me</h1>
+        <h1 className="text-4xl font-bold text-white">About Me</h1>
       </div>
       <div className="flex flex-col w-full gap-4 h-2/4">
           <p className="text-[#dfdfdf] xs:text-base md:text-lg">
@@ -25,15 +43,6 @@ const About = () => {
             control, and I was able to put these skills into practice by working
             on a project that involved creating a mobile application.
             </p> 
-            {/* <p className="text-[#dfdfdf] text-lg tracking-wide">
-            I actively
-            work on personal projects and participate in online coding
-            challenges to further enhance my skills. I have also been reading
-            articles and following discussions on platforms like the dev
-            community to stay up-to-date on industry trends and advancements.
-            This has allowed me to expand my knowledge and experience working
-            with a variety of programming languages and frameworks.
-            </p>  */}
             <p className="text-[#dfdfdf] xs:text-base md:text-lg">
             As a developer with little experience, I am looking
             for entry-level tech roles to further grow as a developer. I am
@@ -42,7 +51,7 @@ const About = () => {
             candidate for a junior developer role.
             </p>
         </div>
-    </div>
+    </motion.div>
   );
 };
 
