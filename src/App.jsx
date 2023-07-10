@@ -3,6 +3,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import HeroSection from './components/HeroSection'
+import TechSkills from './components/TechSkills'
 import './App.css';
 import './index.css';
 
@@ -12,7 +13,8 @@ function App() {
       <Navigation />
       <HeroSection />
       <About />
-     <Projects />
+      <TechSkills />
+      <Projects />
       <Contact /> 
     </div>
   );

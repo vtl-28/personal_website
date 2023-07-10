@@ -23,7 +23,8 @@ const Navigation = () => {
     spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>About</a>
             </Link>
-            <Link className='text-white'>
+            <Link className='text-white' to='skills' activeClass="active" offset={-30} smooth={true} duration={1000}
+    spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Skills</a>
             </Link>
             <Link className='text-white' to='projects' activeClass="active"  offset={-70} smooth={true} duration={1000}
@@ -52,7 +53,8 @@ const Navigation = () => {
                   <a href='#' className='font-semibold hover:text-[#fe4a57]'>About</a>
                 </Link>
                 <Link
-                  className='text-white'
+                  className='text-white' to='skills' smooth={true} offset={50} duration={1000}
+    spy={true}
                 >
                   <a href='#' className='font-semibold hover:text-[#fe4a57]'>Skills</a>
                 </Link>
@@ -80,13 +82,3 @@ const Navigation = () => {
 }
 
 export default Navigation
-{/* <div>  
-<ul className='flex justify-between w-2/3 list-none'>
-    <Link to='about' smooth={true} offset={50} duration={1000}
-    spy={true}>About</Link>
-    <Link to='projects' smooth={true} offset={50} duration={1000}
-    spy={true}>Projects</Link>
-    <Link to='contact' smooth={true} offset={50} duration={1000}
-    spy={true}>Contact</Link>
-</ul>
-</div> */}
