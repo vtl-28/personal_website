@@ -6,6 +6,7 @@ import { Tilt } from 'react-tilt'
 import absaScreenshot from '../assets/APV_screenshot.PNG'
 import talkhostScreenshot from '../assets/TH_screenshot.PNG'
 import { FaFolder, FaLink, FaGithub } from 'react-icons/fa'
+import { Tooltip } from '@chakra-ui/react'
 
 const Projects = () => {
   const controls = useAnimation();
@@ -40,17 +41,17 @@ const Projects = () => {
             <img alt='project snapshot' src={absaScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-                onClick={() => window.open('source_code_link', "_blank")}
-                className='flex items-center justify-center xs:w-1/4 md:w-[30%] lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
+                className='flex items-center justify-center xs:w-1/4 lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
               >
-                {/* <img
-                  src={github}
-                  alt='source code'
-                  className='object-contain w-1/2 h-1/2'
-                /> */}
-                <FaFolder className='w-1/2 text-white h-1/2'/>
-                <FaLink className='w-1/2 text-white h-1/2'/>
-                <FaGithub className='w-1/2 text-white h-1/2'/>
+                <Tooltip label='Project details'>
+                  <a href='https://drive.google.com/file/d/10OAc4vjCjvk2nNbYeugM2FL93krMx6T-/view?usp=sharing' target='blank' className='w-1/3 text-white h-1/2'><FaFolder/></a>
+                </Tooltip>
+                <Tooltip label='Live site'>
+                  <a href='https://absa-password-vault-cra.herokuapp.com/' target='blank' className='w-1/3 text-white h-1/2'><FaLink/></a>
+                </Tooltip>
+                <Tooltip label='Code repo'>
+                  <a href='https://github.com/vtl-28/absa_password_vault_cra' target='blank' className='w-1/3 text-white h-1/2'><FaGithub/></a>
+                </Tooltip>
               </div>
             </div>
           </CardHeader>
@@ -80,17 +81,17 @@ const Projects = () => {
             <img alt='project snapshot' src={talkhostScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-                onClick={() => window.open('source_code_link', "_blank")}
-                className='flex items-center justify-center xs:w-1/4 md:w-[30%] lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
+                className='flex items-center justify-center xs:w-1/4 lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
               >
-                {/* <img
-                  src={github}
-                  alt='source code'
-                  className='object-contain w-1/2 h-1/2'
-                /> */}
-                <FaFolder className='w-1/2 text-black h-1/2'/>
-                <FaLink className='w-1/2 text-black h-1/2'/>
-                <FaGithub className='w-1/2 text-black h-1/2'/>
+                <Tooltip label='Project details'>
+                  <a href='#' className='w-1/3 text-black h-1/2' target='blank'><FaFolder/></a>
+                </Tooltip>
+                <Tooltip label='Live site'>
+                  <a href='#' className='w-1/3 text-black h-1/2' target='blank'><FaLink/></a>
+                </Tooltip>
+                <Tooltip label='Code repo'>
+                  <a href='https://github.com/vtl-28/skill-share' target='blank' className='w-1/3 text-black h-1/2'><FaGithub /></a>
+                </Tooltip>
               </div>
             </div>
           </CardHeader>
