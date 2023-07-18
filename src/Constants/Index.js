@@ -6,7 +6,10 @@ import reactjs from '../assets/Tech/reactjs.png'
 import nodejs from '../assets/Tech/nodejs.png'
 import tailwindcss from '../assets/Tech/tailwind.png'
 import git from '../assets/Tech/git.png'
-
+import cSharp from '../assets/Tech/c#_no_bg.png'
+import java from '../assets/Tech/java_no_bg.png'
+import jest from '../assets/Tech/jest_no_bg.png'
+import rtl from '../assets/Tech/rtl_no_bg.png'
 const technologies = [
     {
       name: "figma",
@@ -40,6 +43,22 @@ const technologies = [
       name: "git",
       icon: git,
     },
+    {
+      name: "c#",
+      icon: cSharp,
+    },
+    {
+      name: "java",
+      icon: java,
+    },
+    {
+      name: "jest",
+      icon: jest,
+    },
+    {
+      name: "react testing library",
+      icon: rtl,
+    }
    
   ];
 

@@ -35,7 +35,7 @@ const Projects = () => {
           scale: 1,
           speed: 450,
         }}>
-        <Card bg="#1f2235" px="4" className='rounded-2xl'>
+        <Card bg="#24263b" px="4" className='rounded-2xl'>
           <CardHeader pb={['0px']}>
             <img alt='project snapshot' src={absaScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -75,7 +75,7 @@ const Projects = () => {
           scale: 1,
           speed: 450,
         }}>
-        <Card bg="#1f2235" px="4" className='rounded-2xl'>
+        <Card bg="#24263b" px="4" className='rounded-2xl'>
           <CardHeader pb={['0px']}>
             <img alt='project snapshot' src={talkhostScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>

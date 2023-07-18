@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
+import resume from '../assets/CV of Vuyisile Lehola.pdf'
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -35,6 +36,8 @@ const Navigation = () => {
     spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Contact</a>
             </Link>
+            <a href={resume} download='CV of Vuyisile Lehola.pdf'  className='text-white text-lg font-semibold hover:text-[#fe4a57]'>Resume</a>
+        
         </ul>
         <div className='flex items-center justify-end flex-1 md:hidden'>
           <img
