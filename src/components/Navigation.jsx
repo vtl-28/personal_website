@@ -22,19 +22,19 @@ const Navigation = () => {
          
             <Link className='text-white' to='about' activeClass="active" offset={-70} smooth={true} duration={1000}
     spy={true}>
-              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>About</a>
+              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57] font-link'>About</a>
             </Link>
             <Link className='text-white' to='skills' activeClass="active" offset={-30} smooth={true} duration={1000}
     spy={true}>
-              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Skills</a>
+              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57] font-link'>Skills</a>
             </Link>
             <Link className='text-white' to='projects' activeClass="active"  offset={-70} smooth={true} duration={1000}
     spy={true}>
-              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Projects</a>
+              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57] font-link'>Projects</a>
             </Link>
             <Link className='text-white' to='contact' activeClass="active" offset={-70} smooth={true} duration={1000}
     spy={true}>
-              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57]'>Contact</a>
+              <a href="#" className='text-lg font-semibold hover:text-[#fe4a57] font-link'>Contact</a>
             </Link>
             <a href={resume} download='CV of Vuyisile Lehola.pdf'  className='text-white text-lg font-semibold hover:text-[#fe4a57]'>Resume</a>
         

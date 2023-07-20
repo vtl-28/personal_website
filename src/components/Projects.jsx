@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <div id='projects' className='flex flex-col py-24 xs:px-12 lg:px-24 projects_section'>
       <motion.div ref={ref} initial={{ opacity: 0}} animate={controls} className='flex items-center justify-center mb-10'>
-        <h1 className='font-bold text-white xs:text-2xl md:text-4xl'>Some things I've built</h1>
+        <h1 className='font-bold text-white xs:text-2xl md:text-4xl font-link'>Some things I've built</h1>
       </motion.div>
       <div className='flex justify-between gap-8 xs:flex-col md:flex-row md:justify-between md:gap-4 lg:gap-8'>
         <Tilt options={{
@@ -56,8 +56,8 @@ const Projects = () => {
             </div>
           </CardHeader>
           <CardBody>
-            <h1 className='my-2 font-bold text-white'>Absa Password Vault</h1>
-            <p className='text-[#dfdfdf]'>Password manager used to help internal staff of Absa to store the 
+            <h1 className='my-2 font-bold text-white font-link'>Absa Password Vault</h1>
+            <p className='text-[#dfdfdf] font-link'>Password manager used to help internal staff of Absa to store the 
             passwords to the many applications and systems they used to get 
             work done
             .</p>
@@ -96,8 +96,8 @@ const Projects = () => {
             </div>
           </CardHeader>
           <CardBody>
-            <h1 className='my-2 font-bold text-white'>Talk Host</h1>
-            <p className='text-[#dfdfdf]'>Talk host is a platform that brings people with a shared interest together and allows 
+            <h1 className='my-2 font-bold text-white font-link'>Talk Host</h1>
+            <p className='text-[#dfdfdf] font-link'>Talk host is a platform that brings people with a shared interest together and allows 
             them to give small, informal presentations about things they know.</p>
             <ul className='flex flex-wrap gap-3 mt-4 list-none'>
               <li className='text-[#008000]'>mongodb</li>

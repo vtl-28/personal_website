@@ -30,32 +30,17 @@ const HeroSection = () => {
                 <FaLinkedin className='w-5 h-5 text-white'/>
               </motion.a>
           </div>
-          <h3 className='mb-6 text-2xl text-white md:text-3xl lg:text-2xl'>Hi, my name is </h3>
-          <h3 className='mb-8 text-5xl text-white xs:text-4xl'>Vuyisile Tlotliso Lehola</h3>
+          <h3 className='mb-6 text-2xl text-white md:text-3xl lg:text-2xl font-link'>Hi, my name is </h3>
+          <h3 className='mb-8 text-5xl text-white xs:text-4xl font-link'>Vuyisile Tlotliso Lehola</h3>
           <p className='text-[#dfdfdf] xs:text-xl md:text-2xl'>Full-stack developer looking for an entry-level role in a development team to 
 further grow as a developer</p>
           <Link to='about' smooth={true} offset={10} duration={1000}
     spy={true}>
-            <motion.button variants={buttonVariants} whileHover="hover" className='text-white font-semibold  border-2 border-[#fe4a57] rounded-full mt-6 hover:bg-[#fe4a57] xs:w-[45%] sm:w-[40%] xs:py-3 sm:py-3 lg:w-[30%] md:py-3'>Find out more</motion.button>
+            <motion.button variants={buttonVariants} whileHover="hover" className='font-link text-white font-semibold  border-2 border-[#fe4a57] rounded-full mt-6 hover:bg-[#fe4a57] xs:w-[45%] sm:w-[40%] xs:py-3 sm:py-3 lg:w-[30%] md:py-3'>Find out more</motion.button>
           </Link>
       </motion.div>
-      <motion.div transition={{duration: 1, delay: 1.5, ease: easeInOut}} initial={{opacity: 0}} animate={{opacity: 1}} className='relative xs:hidden lg:flex h-[500px]'>
-        <Canvas>
-              <Suspense fallback={null}>
-                <OrbitControls enableZoom={false} />
-                <ambientLight intensity={1} />
-                <directionalLight position={[3, 2, 1]} />
-                <Sphere args={[1, 100, 200]} scale={2.4}>
-                  <MeshDistortMaterial
-                    color="#3d1c56"
-                    attach="material"
-                    distort={0.5}
-                    speed={2}
-                  />
-                </Sphere>
-              </Suspense>
-          </Canvas>
-        <img alt="profile pic" src={profilePic} className='object-contain w-[800px] h-[450px] absolute top-0 left-0 right-0 bottom-0 m-auto'/>
+      <motion.div transition={{duration: 1, delay: 1.5, ease: easeInOut}} initial={{opacity: 0}} animate={{opacity: 1}} className='relative xs:hidden lg:flex'>
+        <img alt="profile pic" src={profilePic} className='h-[350px]'/>
       </motion.div>
     </div>
   )

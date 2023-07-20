@@ -91,8 +91,8 @@ const Contact = () => {
   return (
     <motion.div ref={ref} initial={{ opacity: 0}} animate={controls} id='contact' className='flex flex-col gap-12 py-24 contact_section xs:px-12'>
         <div className='flex flex-col items-center justify-center gap-4'>
-            <h3 className='text-[#fe4a57] uppercase font-semibold'>Have any query?</h3>
-            <h1 className='font-bold text-white xs:text-4xl'>Contact Me</h1>
+            <h3 className='text-[#fe4a57] uppercase font-semibold font-link'>Have any query?</h3>
+            <h1 className='font-bold text-white xs:text-4xl font-link'>Contact Me</h1>
         </div>
         { emailSentError && (<ErrorToast 
            

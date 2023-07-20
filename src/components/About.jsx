@@ -21,7 +21,7 @@ const About = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div ref={ref} initial={{ opacity: 0}} animate={controls} className="flex flex-col py-24 xs:px-12 md:px-24 about_section" id="about">
+    <motion.div ref={ref} initial={{ opacity: 0}} animate={controls} className="font-link flex flex-col py-24 xs:px-12 md:px-24 about_section" id="about">
       <div className="flex justify-center mb-8">
         <h1 className="text-4xl font-bold text-white">About Me</h1>
       </div>
