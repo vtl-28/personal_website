@@ -84,9 +84,9 @@ const Projects = () => {
                 className='flex items-center justify-center xs:w-1/4 lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
               >
                 <Tooltip label='Project details'>
-                  <a href='#' className='w-1/3 text-black h-1/2' target='blank'><FaFolder/></a>
+                  <a href='https://drive.google.com/file/d/13WevHzn0F3Ij5rQDBPepmEco88SScRMk/view?usp=sharing' className='w-1/3 text-black h-1/2' target='blank'><FaFolder/></a>
                 </Tooltip>
-                <Tooltip label='Live site'>
+                <Tooltip label='Live site in progress'>
                   <a href='#' className='w-1/3 text-black h-1/2' target='blank'><FaLink/></a>
                 </Tooltip>
                 <Tooltip label='Code repo'>
