@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03d0f116.css",
+    "main.js": "/static/js/main.c801577b.js",
+    "static/media/dp_no_bg.png": "/static/media/dp_no_bg.72c05853be83dd0baa01.png",
+    "static/media/CV of Vuyisile Lehola.pdf": "/static/media/CV of Vuyisile Lehola.fbc36d6151a1a4d5f1aa.pdf",
+    "static/media/TH_screenshot.PNG": "/static/media/TH_screenshot.bf87b989f88e805a71d0.PNG",
+    "static/media/APV_screenshot.PNG": "/static/media/APV_screenshot.db8580bb9bb481985824.PNG",
+    "static/media/rtl_no_bg.png": "/static/media/rtl_no_bg.f71a98352c8a8cb698ff.png",
+    "static/media/close.svg": "/static/media/close.52ab0d39b2c514b8322115c951eac5a2.svg",
+    "static/media/menu.svg": "/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
+    "index.html": "/index.html",
+    "main.03d0f116.css.map": "/static/css/main.03d0f116.css.map",
+    "main.c801577b.js.map": "/static/js/main.c801577b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03d0f116.css",
+    "static/js/main.c801577b.js"
+  ]
+}
