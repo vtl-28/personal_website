@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.03d0f116.css",
-    "main.js": "/static/js/main.80e3462f.js",
+    "main.css": "/static/css/main.b0941073.css",
+    "main.js": "/static/js/main.c95a2dbb.js",
     "static/media/dp_no_bg.png": "/static/media/dp_no_bg.72c05853be83dd0baa01.png",
     "static/media/CV of Vuyisile Lehola.pdf": "/static/media/CV of Vuyisile Lehola.7cef6dbb28d31c5f236b.pdf",
     "static/media/TH_screenshot.PNG": "/static/media/TH_screenshot.bf87b989f88e805a71d0.PNG",
@@ -10,11 +10,11 @@
     "static/media/close.svg": "/static/media/close.52ab0d39b2c514b8322115c951eac5a2.svg",
     "static/media/menu.svg": "/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "index.html": "/index.html",
-    "main.03d0f116.css.map": "/static/css/main.03d0f116.css.map",
-    "main.80e3462f.js.map": "/static/js/main.80e3462f.js.map"
+    "main.b0941073.css.map": "/static/css/main.b0941073.css.map",
+    "main.c95a2dbb.js.map": "/static/js/main.c95a2dbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.03d0f116.css",
-    "static/js/main.80e3462f.js"
+    "static/css/main.b0941073.css",
+    "static/js/main.c95a2dbb.js"
   ]
 }
