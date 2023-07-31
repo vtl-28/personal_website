@@ -41,7 +41,7 @@ const Projects = () => {
             <img alt='project snapshot' src={absaScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-                className='flex items-center justify-center xs:w-1/4 lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
+                className='flex items-center justify-center xs:w-[35%]  sm:w-[25%] md:w-[30%] lg:w-[1/4] h-10 xs:mr-4 sm:mr-0 md:mr-3 lg:mr-2 xl:mr-0 rounded-full cursor-pointer black-gradient'
               >
                 <Tooltip label='Project details'>
                   <a href='https://drive.google.com/file/d/10OAc4vjCjvk2nNbYeugM2FL93krMx6T-/view?usp=sharing' target='blank' className='w-1/3 text-white h-1/2'><FaFolder/></a>
@@ -81,7 +81,7 @@ const Projects = () => {
             <img alt='project snapshot' src={talkhostScreenshot} className='object-cover rounded-2xl xs:h-[812%] md:h-[100%] xs:w-full'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-                className='flex items-center justify-center xs:w-1/4 lg:w-[1/4] h-10 mr-4 rounded-full cursor-pointer black-gradient'
+                className='flex items-center justify-center xs:w-[35%] sm:w-[25%] md:w-[30%] lg:w-[1/4] h-10 xs:mr-4 sm:mr-0 md:mr-3 lg:mr-2 xl:mr-0 rounded-full cursor-pointer black-gradient'
               >
                 <Tooltip label='Project details'>
                   <a href='https://drive.google.com/file/d/13WevHzn0F3Ij5rQDBPepmEco88SScRMk/view?usp=sharing' className='w-1/3 text-black h-1/2' target='blank'><FaFolder/></a>

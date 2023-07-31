@@ -7,7 +7,7 @@ const ErrorToast = ({  message,
     toggleEmailError,
     placement,}) => {
     return(
-        <ToastContainer className="w-1/3 mx-auto border border-red-600 rounded-md">
+        <ToastContainer className="sm:w-2/3 lg:w-[33%] xs:w-full mx-auto border border-red-600 rounded-md">
         <Toast
           className="flex flex-col items-center py-2 bg-red-600"
           show={emailSentError}

@@ -6,6 +6,12 @@ import resume from '../assets/CV of Vuyisile Lehola.pdf'
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
+
+  function openResume() {
+    window.open('https://drive.google.com/file/d/1HfW24SjXTECRR9RquXvt7PPYEORTBTAp/view?usp=sharing', '_blank');
+  }
+  
+
   return (
    <nav className='sm:px-16 px-12 w-full flex items-center py-6 fixed top-0 z-20 bg-[#1f2235]'>
       <div className='flex items-center justify-between w-full mx-auto max-w-7xl'>
@@ -18,7 +24,7 @@ const Navigation = () => {
             vt<span className='text-[#fe4a57]'>.</span>lehola
           </p>
         </Link>
-        <ul className='flex-row hidden list-none md:flex gap-14'>
+        <ul className='flex-row hidden list-none lg:flex gap-14'>
          
             <Link className='text-white' to='about' activeClass="active" offset={-70} smooth={true} duration={1000}
     spy={true}>
@@ -36,17 +42,17 @@ const Navigation = () => {
     spy={true}>
               <a href="#" className='text-lg font-semibold hover:text-[#fe4a57] font-link'>Contact</a>
             </Link>
-            <a href={resume} download='CV of Vuyisile Lehola.pdf'  className='text-white text-lg font-semibold hover:text-[#fe4a57]'>Resume</a>
+            <a type='button' onClick={openResume}  download='CV of Vuyisile Lehola.pdf'  className='text-white text-lg font-semibold hover:text-[#fe4a57] cursor-pointer'>Resume</a>
         
         </ul>
-        <div className='flex items-center justify-end flex-1 md:hidden'>
+        <div className='flex items-center justify-end flex-1 lg:hidden'>
           <img
             src={toggle ? close : menu}
             alt='menu'
             className=' w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
-          <div className={`${!toggle ? "hidden" : "flex"} border border-[#1f2235] mr-10 p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? "hidden" : "flex"} border border-[#1f2235] mr-10 p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}>
             <ul className='flex flex-col items-center justify-end flex-1 gap-4 list-none'>
              
                 <Link

@@ -4,7 +4,6 @@
 }
 .hero_section {
   display: flex;
-  height: 100vh;
   background-color: #24263b;
 }
 
@@ -37,3 +36,32 @@
 .font-link {
   font-family: 'Open Sans', cursive;
 }
+
+@media (min-width: 500px) {
+  .developer_role{
+    font-size: x-large;
+  }
+  .developer_socials{
+    width: 60%;
+  }
+}
+
+@media (min-width: 640px) {
+  .developer_role{
+    font-size: xx-large;
+  }
+}
+@media (min-width: 768px) {
+  .developer_socials{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .developer_role{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+}
+

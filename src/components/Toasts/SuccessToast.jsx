@@ -8,7 +8,7 @@ const SuccessToast = ({
   toggleEmailSent,
 }) => {
   return (
-    <ToastContainer className="w-1/3 mx-auto border border-green-800 rounded-md">
+    <ToastContainer className="sm:w-2/3 lg:w-[50%] xs:w-full mx-auto border border-green-800 rounded-md">
       <Toast
         className="flex flex-col items-center py-2 bg-green-800"
         show={emailSent}
@@ -20,7 +20,7 @@ const SuccessToast = ({
           <FaInfoCircle className="text-base text-white" />
           <small className="ml-3 text-white text-md">Success!</small>
         </ToastHeader>
-        <Toast.Body className="text-base text-white">{message}</Toast.Body>
+        <Toast.Body className="text-base text-white xs:text-center">{message}</Toast.Body>
       </Toast>
     </ToastContainer>
   );

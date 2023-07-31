@@ -54,7 +54,8 @@ const Contact = () => {
 
   const handleContactForm = (e) => {
     e.preventDefault();
-    setEmailSending(true)
+    setEmailSending(true);
+  
     const formData = {
       'name': userName,
       'email': userEmail,
@@ -63,7 +64,7 @@ const Contact = () => {
     }
     if(!userEmail || !userName || !emailSubject || !emailMessage){
       setEmailSending(false)
-      setEmailErrorMessage('Enter all fields please')
+      setEmailErrorMessage('Please enter all fields')
       toggleEmailError()
       return;
     }else{
@@ -121,17 +122,10 @@ const Contact = () => {
             <Textarea type='text' placeholder='Your Message' value={emailMessage}  name='message' onChange={(e) => setEmailMessage(e.target.value)} focusBorderColor='#fff' _placeholder={{ color: '#fff' }} color='white' size='lg' height={40} bg='#1f2235' isInvalid
     errorBorderColor='#1f2235'/>
           </FormControl>
-          <motion.button variants={buttonVariants} whileHover="hover" onClick={(e) => handleContactForm(e)} className='text-white rounded-full bg-[#fe4a57] xs:w-2/5 md:w-[30%] lg:w-[25%] xl:w-[20%] py-4 font-semibold'>
-            { emailSending && (  <Spinner
-                      as="span"
-                      animation="border"
-                      size="sm"
-                      role="status"
-                      aria-hidden="true"
-                      variant="secondary"
-                    />)}
-              <span className={emailSending ? 'text-white' : 'text-white'}>
-                Send Message
+          <motion.button variants={buttonVariants} whileHover="hover" onClick={(e) => handleContactForm(e)} className='text-white rounded-full bg-[#fe4a57] xs:w-75 sm:w-[50%] md:w-[30%] lg:w-[25%] xl:w-[20%] py-4 font-semibold'>
+        
+              <span className='text-white'>
+                { emailSending ? 'Sending...' : 'Send Message'}
               </span>
             </motion.button>
         </div>
