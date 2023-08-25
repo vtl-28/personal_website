@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
-import resume from '../assets/CV of Vuyisile Lehola.pdf'
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
 
   function openResume() {
-    window.open('https://drive.google.com/file/d/1HfW24SjXTECRR9RquXvt7PPYEORTBTAp/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1yTnE6hAqoB8b-W4J6B5Ww2zjqdZNpmAq/view?usp=sharing', '_blank');
   }
   
 
