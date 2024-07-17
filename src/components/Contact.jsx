@@ -4,7 +4,6 @@ import {
   Input,
   Textarea,
 } from '@chakra-ui/react';
-import { Spinner } from "react-bootstrap";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from '@emailjs/browser';

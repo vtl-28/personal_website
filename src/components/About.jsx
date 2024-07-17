@@ -38,7 +38,7 @@ const About = () => {
           company. This invaluable experience allowed me to refine my skills and
           gain practical knowledge while working on real-world projects.
           Throughout the internship, I had the privilege of working with diverse
-          technologies, including JavaScript, HTML, CSS, as well as back-end
+          technologies, including JavaScript, Android, Java, as well as back-end
           technologies such as Node.js, Express, and MongoDB.
         </p>
         <p className="text-[#dfdfdf] xs:text-base md:text-xl">
@@ -50,11 +50,11 @@ const About = () => {
           contributing to the development of a mobile application.
         </p>
         <p className="text-[#dfdfdf] xs:text-base md:text-xl">
-          Now, as a junior developer with a passion for continuous learning, I
+          Now, as a junior engineer with a passion for continuous learning, I
           am eagerly seeking entry-level tech roles to further nurture my
           expertise. With my unwavering dedication to software development,
           coupled with my practical experience and commitment to growth, I am
-          confident in my ability to be an asset in a junior developer position.
+          confident in my ability to be an asset in a junior engineer/developer position.
         </p>
       </div>
     </motion.div>

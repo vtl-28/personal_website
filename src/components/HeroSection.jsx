@@ -1,10 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import profilePic from "../assets/dp_no_bg.png";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { easeInOut, motion } from "framer-motion";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const buttonVariants = {
   hover: {
@@ -64,8 +62,8 @@ const HeroSection = () => {
           Vuyisile Tlotliso Lehola
         </h3>
         <p className="text-[#dfdfdf] xs:text-lg xs:mb-6 sm:mb-8 md:text-2xl lg:text-3xl developer_role">
-          Full-stack developer looking for an entry-level role in a development
-          team to further grow as a developer
+          Software Engineer looking for an entry-level role in a development
+          team to further grow as an engineer
         </p>
       </div>
         <Link to="about" smooth={true} offset={10} duration={1000} spy={true}>

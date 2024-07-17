@@ -47,7 +47,7 @@ const Projects = () => {
                   <a href='https://drive.google.com/file/d/10OAc4vjCjvk2nNbYeugM2FL93krMx6T-/view?usp=sharing' target='blank' className='w-1/3 text-white h-1/2'><FaFolder/></a>
                 </Tooltip>
                 <Tooltip label='Live site'>
-                  <a href='https://absa-password-vault-cra.herokuapp.com/' target='blank' className='w-1/3 text-white h-1/2'><FaLink/></a>
+                  <a href='https://absa-password-vault-client.vercel.app/' target='blank' className='w-1/3 text-white h-1/2'><FaLink/></a>
                 </Tooltip>
                 <Tooltip label='Code repo'>
                   <a href='https://github.com/vtl-28/absa_password_vault_cra' target='blank' className='w-1/3 text-white h-1/2'><FaGithub/></a>
