@@ -12,6 +12,22 @@ import docker from '../assets/Tech/docker-logo (1).png'
 import mysql from '../assets/Tech/mysql-logo (1).png'
 const technologies = [
     {
+      name: "Linux",
+      icon: linux,
+    },
+    {
+      name: "Bash",
+      icon: bash,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "React",
+      icon: reactjs,
+    },
+    {
       name: "AWS",
       icon: aws,
     },
@@ -42,22 +58,6 @@ const technologies = [
     {
       name: "MySQL",
       icon: mysql,
-    },
-    {
-      name: "Linux",
-      icon: linux,
-    },
-    {
-      name: "Bash",
-      icon: bash,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "React",
-      icon: reactjs,
     }
   ];
 
