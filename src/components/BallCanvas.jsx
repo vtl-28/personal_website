@@ -38,11 +38,14 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+  const isChromeMobile = /Chrome/.test(navigator.userAgent) && /Android|iPhone|iPad/.test(navigator.userAgent);
   return (
     <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+      frameloop='always'
+      dpr={isMobile ? [1, 1.5] : [1, 2]}
+      gl={{ preserveDrawingBuffer: !isChromeMobile, 
+        powerPreference: 'high-performance' }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
