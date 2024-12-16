@@ -7,7 +7,7 @@ const Navigation = () => {
   const [toggle, setToggle] = useState(false);
 
   function openResume() {
-    window.open('https://docs.google.com/document/d/1rYvFWtan42KXARWdltmnH0Dit9wd0-YMxIcTrMylTCg/edit?usp=sharing', '_blank');
+    window.open('https://docs.google.com/document/d/1fcSML8oPVkb7ZI3hMpKCru-Bzf89QdK7oR0G2jVfpM8/edit?usp=sharing', '_blank');
   }
   
 

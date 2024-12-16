@@ -1,23 +1,23 @@
-import figma from '../assets/Tech/figma.png'
-import expressjs from '../assets/Tech/express_no_bg.png'
+import linux from '../assets/Tech/linux_logo.png'
+import bash from '../assets/Tech/bash_logo.png'
 import mongodb from '../assets/Tech/mongodb.png'
 import javascript from '../assets/Tech/javascript.png'
 import reactjs from '../assets/Tech/reactjs.png'
 import nodejs from '../assets/Tech/nodejs.png'
-import tailwindcss from '../assets/Tech/tailwind.png'
+import aws from '../assets/Tech/aws-logo.png'
 import git from '../assets/Tech/git.png'
-import cSharp from '../assets/Tech/c#_no_bg.png'
-import java from '../assets/Tech/java_no_bg.png'
-import jest from '../assets/Tech/jest_no_bg.png'
-import rtl from '../assets/Tech/rtl_no_bg.png'
+import c from '../assets/Tech/C-logo.png'
+import python from '../assets/Tech/python-logo.png'
+import docker from '../assets/Tech/docker-logo (1).png'
+import mysql from '../assets/Tech/mysql-logo (1).png'
 const technologies = [
     {
-      name: "figma",
-      icon: figma,
+      name: "linux",
+      icon: linux,
     },
     {
-      name: "express",
-      icon: expressjs,
+      name: "bash",
+      icon: bash,
     },
     {
       name: "mongodb",
@@ -28,8 +28,8 @@ const technologies = [
       icon: reactjs,
     },
     {
-      name: "tailwind",
-      icon: tailwindcss,
+      name: "aws",
+      icon: aws,
     },
     {
       name: "javascript",
@@ -44,20 +44,20 @@ const technologies = [
       icon: git,
     },
     {
-      name: "c#",
-      icon: cSharp,
+      name: "c",
+      icon: c,
     },
     {
-      name: "java",
-      icon: java,
+      name: "python",
+      icon: python,
     },
     {
-      name: "jest",
-      icon: jest,
+      name: "docker",
+      icon: docker,
     },
     {
-      name: "react testing library",
-      icon: rtl,
+      name: "mysql",
+      icon: mysql,
     }
    
   ];
